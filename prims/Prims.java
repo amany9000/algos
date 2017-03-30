@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Prims {
 
     private static class primsMST {
-        static int[] generate(int[][] ar) {
+        private static int[] generate(int[][] ar) {
             int length = ar.length;
             // Stores the parent of each vertex
             int parent[] = new int[length];

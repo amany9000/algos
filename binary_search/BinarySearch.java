@@ -15,7 +15,7 @@ public class BinarySearch {
             }
         }
 
-        return -1;        // Element not found
+        return  -1;        // Element not found
     }
 
     public static void main(String[] args) {

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Prims {
 
-    static class primsMST {
+    private static class primsMST {
         static int[] generate(int[][] ar) {
             int length = ar.length;
             // Stores the parent of each vertex
@@ -42,7 +42,8 @@ public class Prims {
         }
 
         private static int minKey(int[] key, boolean[] visited) {
-            int min = Integer.MAX_VALUE, minIdx = -1;
+            int min = Integer.MAX_VALUE;
+            int minIdx = -1;
             int length = key.length;
             for (int i = 0; i < length; i++) {
                 if (!visited[i] && key[i] < min) {
